@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ABIRAMI.R - AI & Data Science Student | Portfolio featuring projects in Artificial Intelligence, Data Analytics, Full Stack Development, and Machine Learning.">
+  <meta name="keywords" content="Abirami.R, AI, Data Science, Portfolio, Full Stack Development, Python, Machine Learning, RAG, LLMs">
+  <meta name="author" content="Abirami.R">
+  <title>ABIRAMI.R | AI & Data Science Student Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Dancing+Script:wght@600;700&family=Alex+Brush&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Background Blobs & Grid -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="tech-grid"></div>
+    <canvas id="bg-particles"></canvas>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-header">
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" id="nav-logo">
+          <span class="logo-accent">ABIRAMI</span>
+          <span class="logo-dot"></span>
+        </a>
+
+        <button class="hamburger-menu" id="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+          <li class="nav-item"><a href="#academic" class="nav-link">ACADEMICS</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li class="nav-item"><a href="#technologies" class="nav-link">TECH</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">EDUCATION</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link">CERTIFICATIONS</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-btn-cta">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="section-container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge-wrapper">
+            <span class="hero-badge"><i class="fa-solid fa-brain"></i> AI & DATA SCIENCE</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-text hero-name">ABIRAMI.R</span>
+          </h1>
+          <p class="hero-headline">AI & Data Science Student | Building with AI, Data and Technology.</p>
+          <p class="hero-subtitle">
+            AI & Data Science Student passionate about Artificial Intelligence, Data Analytics, Full Stack Development and building practical technology solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              <span>VIEW MY PROJECTS</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-cta-connect">
+              <span>LET'S CONNECT</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="hero-quick-highlights">
+            <div class="quick-chip"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="quick-chip"><i class="fa-solid fa-network-wired"></i> RAG & LLMs</div>
+            <div class="quick-chip"><i class="fa-solid fa-code"></i> Full Stack</div>
+            <div class="quick-chip"><i class="fa-solid fa-chart-pie"></i> Data Analytics</div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-frame">
+            <div class="visual-glow-ring"></div>
+            <canvas id="hero-nodes-canvas"></canvas>
+            <div class="hero-overlay-badge badge-top-left">
+              <i class="fa-solid fa-microchip"></i> Neural Networks
+            </div>
+            <div class="hero-overlay-badge badge-bottom-right">
+              <i class="fa-solid fa-database"></i> Data Analytics
+            </div>
+            <div class="hero-center-node">
+              <div class="pulse-ring"></div>
+              <i class="fa-solid fa-atom"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">ABOUT ME</span>
+          <h2 class="section-title">Turning Ideas Into <span class="gradient-text">Intelligent Solutions</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-about-card">
+            <div class="card-glow"></div>
+            <div class="about-icon-header">
+              <div class="icon-avatar">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <div>
+                <h3>ABIRAMI.R</h3>
+                <p class="role-subtitle">AI & Data Science Student</p>
+              </div>
+            </div>
+            <p class="about-text-lead">
+              "I am an AI & Data Science student interested in Artificial Intelligence, Data Science, Data Analytics, Full Stack Development and modern technologies. I enjoy building practical projects that solve real-world problems and continuously improving my technical skills through hands-on learning."
+            </p>
+            <p class="about-text-body">
+              I am an AI & Data Science student with a strong interest in Artificial Intelligence, Data Analytics, Machine Learning, Full Stack Development and modern programming technologies. I enjoy creating practical applications that combine programming, data and AI. I am continuously developing my skills through projects, internship experience and hands-on learning.
+            </p>
+
+            <div class="interest-badges-wrapper">
+              <h4 class="badges-title"><i class="fa-solid fa-sparkles"></i> Key Areas of Interest:</h4>
+              <div class="interest-badges">
+                <span class="interest-tag"><i class="fa-solid fa-robot"></i> AI</span>
+                <span class="interest-tag"><i class="fa-solid fa-chart-line"></i> DATA SCIENCE</span>
+                <span class="interest-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> DATA ANALYTICS</span>
+                <span class="interest-tag"><i class="fa-solid fa-diagram-project"></i> MACHINE LEARNING</span>
+                <span class="interest-tag"><i class="fa-solid fa-layer-group"></i> FULL STACK DEVELOPMENT</span>
+                <span class="interest-tag"><i class="fa-solid fa-comments"></i> NLP</span>
+                <span class="interest-tag"><i class="fa-solid fa-bolt"></i> RAG</span>
+                <span class="interest-tag"><i class="fa-solid fa-brain"></i> LLMs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-side-cards">
+            <div class="glass-card stat-highlight-card">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="stat-content">
+                <span class="stat-number">1 MONTH</span>
+                <span class="stat-label">Full Stack Internship Completed</span>
+                <p class="stat-sub">Gateway Solutions</p>
+              </div>
+            </div>
+
+           <div class="glass-card stat-highlight-card">
+
+  <div class="card-icon-box">
+    <i class="fa-solid fa-cubes"></i>
+  </div>
+
+  <div class="stat-content">
+    <span class="stat-number">5 PROJECTS</span>
+    <span class="stat-label">Featured Projects Built</span>
+    <p class="stat-sub">
+      AI, Health, Banking & Traffic Systems
+    </p>
+  </div>
+
+</div>
+
+            <div class="glass-card stat-highlight-card">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="stat-content">
+                <span class="stat-number">4 CERTIFICATIONS</span>
+                <span class="stat-label">Industry Credentials</span>
+                <p class="stat-sub">Deloitte, Udemy, Analytics Vidhya, Infosys</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC PERFORMANCE SECTION -->
+    <section id="academic" class="academic-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">ACADEMICS</span>
+          <h2 class="section-title">Academic <span class="gradient-text">Performance</span></h2>
+          <p class="section-subtitle">Consistent academic dedication and numerical accuracy across foundational milestones.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="academic-grid">
+          <!-- 12th Grade -->
+          <div class="glass-card academic-card" id="academic-12th">
+            <div class="card-glow"></div>
+            <div class="circle-progress-wrapper">
+              <svg class="progress-ring" width="180" height="180">
+                <circle class="progress-ring-bg" stroke="rgba(196, 181, 253, 0.15)" stroke-width="14" fill="transparent" r="72" cx="90" cy="90"/>
+                <circle class="progress-ring-circle" id="ring-12th" stroke="url(#lavender-pink-gradient)" stroke-width="14" stroke-linecap="round" fill="transparent" r="72" cx="90" cy="90" stroke-dasharray="452.389" stroke-dashoffset="452.389"/>
+                <defs>
+                  <linearGradient id="lavender-pink-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#A78BFA"/>
+                    <stop offset="50%" stop-color="#C4B5FD"/>
+                    <stop offset="100%" stop-color="#F9A8D4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="circle-number">
+                <span class="percent-val" id="val-12th">0%</span>
+                <span class="grade-tag">Higher Secondary</span>
+              </div>
+            </div>
+            <div class="academic-info">
+              <h3>12th Grade</h3>
+              <div class="score-pill">76% Aggregate</div>
+              <p>Strong mathematical and analytical foundation built during senior secondary education.</p>
+            </div>
+          </div>
+
+          <!-- 10th Grade -->
+          <div class="glass-card academic-card" id="academic-10th">
+            <div class="card-glow"></div>
+            <div class="circle-progress-wrapper">
+              <svg class="progress-ring" width="180" height="180">
+                <circle class="progress-ring-bg" stroke="rgba(196, 181, 253, 0.15)" stroke-width="14" fill="transparent" r="72" cx="90" cy="90"/>
+                <circle class="progress-ring-circle" id="ring-10th" stroke="url(#lavender-pink-gradient-2)" stroke-width="14" stroke-linecap="round" fill="transparent" r="72" cx="90" cy="90" stroke-dasharray="452.389" stroke-dashoffset="452.389"/>
+                <defs>
+                  <linearGradient id="lavender-pink-gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#F9A8D4"/>
+                    <stop offset="50%" stop-color="#C4B5FD"/>
+                    <stop offset="100%" stop-color="#A78BFA"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="circle-number">
+                <span class="percent-val" id="val-10th">0%</span>
+                <span class="grade-tag">Secondary School</span>
+              </div>
+            </div>
+            <div class="academic-info">
+              <h3>10th Grade</h3>
+              <div class="score-pill">89.2% Aggregate</div>
+              <p>Excellence in core science, mathematics, and problem-solving fundamentals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">MY EXPERTISE</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills & Abilities</span></h2>
+          <p class="section-subtitle">Comprehensive set of technical proficiencies across programming, web development, AI, and tools.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>PROGRAMMING LANGUAGES</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fa-solid fa-c"></i> C</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 78%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fa-brands fa-java"></i> Java</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>FULL STACK DEVELOPMENT</h3>
+            </div>
+            <div class="skill-tags-flex">
+              <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="skill-pill"><i class="fa-solid fa-server"></i> Express.js</span>
+              <span class="skill-pill"><i class="fa-solid fa-gears"></i> REST APIs</span>
+              <span class="skill-pill"><i class="fa-solid fa-database"></i> Backend Development</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>AI & DATA SCIENCE</h3>
+            </div>
+            <div class="skill-tags-flex">
+              <span class="skill-pill featured-pill"><i class="fa-solid fa-robot"></i> Artificial Intelligence</span>
+              <span class="skill-pill featured-pill"><i class="fa-solid fa-chart-pie"></i> Data Science</span>
+              <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+              <span class="skill-pill highlight-pink"><i class="fa-solid fa-bolt"></i> RAG</span>
+              <span class="skill-pill highlight-pink"><i class="fa-solid fa-microchip"></i> LLMs</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon"><i class="fa-solid fa-wrench"></i></div>
+              <h3>TOOLS & ENVIRONMENTS</h3>
+            </div>
+            <div class="skill-tags-flex">
+              <span class="skill-pill"><i class="fa-solid fa-rocket"></i> Postman</span>
+              <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="skill-pill"><i class="fa-solid fa-code-compare"></i> VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES SECTION -->
+    <section id="technologies" class="tech-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">STACK HIGHLIGHTS</span>
+          <h2 class="section-title">Core <span class="gradient-text">Technologies</span></h2>
+          <p class="section-subtitle">Key frameworks, languages, and AI instruments powering intelligent projects.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="tech-spotlight-grid">
+          <!-- Featured Tech 1 -->
+          <div class="tech-badge-card featured">
+            <div class="tech-icon"><i class="fa-brands fa-python"></i></div>
+            <h4>Python</h4>
+            <span class="tech-desc">Core AI, Data Science & Backend</span>
+          </div>
+
+          <!-- Featured Tech 2 -->
+          <div class="tech-badge-card featured">
+            <div class="tech-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h4>RAG</h4>
+            <span class="tech-desc">Retrieval-Augmented Generation</span>
+          </div>
+
+          <!-- Featured Tech 3 -->
+          <div class="tech-badge-card featured">
+            <div class="tech-icon"><i class="fa-solid fa-brain"></i></div>
+            <h4>LLMs</h4>
+            <span class="tech-desc">Large Language Model Tech</span>
+          </div>
+
+          <!-- Featured Tech 4 -->
+          <div class="tech-badge-card featured">
+            <div class="tech-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <h4>Postman</h4>
+            <span class="tech-desc">API Testing & Integration</span>
+          </div>
+        </div>
+
+        <!-- Full Stack & Database Tech Strip -->
+        <div class="tech-strip">
+          <span class="strip-label">Project Stack Integration:</span>
+          <div class="strip-items">
+            <div class="chip"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="chip"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="chip"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="chip"><i class="fa-solid fa-server"></i> Express.js</div>
+            <div class="chip"><i class="fa-solid fa-cubes"></i> Prisma</div>
+            <div class="chip"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / INTERNSHIP SECTION -->
+    <section id="experience" class="experience-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">WORK EXPERIENCE</span>
+          <h2 class="section-title">Internship <span class="gradient-text">Timeline</span></h2>
+          <p class="section-subtitle">Practical industry exposure and real-world project development experience.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item glass-card">
+            <div class="timeline-dot-wrapper">
+              <div class="timeline-dot"></div>
+              <div class="timeline-pulse"></div>
+            </div>
+
+            <div class="timeline-header">
+              <div class="company-badge-box">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="company-info">
+                <h3 class="company-name">GATE WAY SOLUTIONS</h3>
+                <h4 class="role-title">FULL STACK DEVELOPMENT INTERN</h4>
+              </div>
+              <div class="duration-badge">
+                <span class="badge-time"><i class="fa-regular fa-clock"></i> 1 MONTH</span>
+                <span class="badge-status completed"><i class="fa-solid fa-circle-check"></i> COMPLETED</span>
+              </div>
+            </div>
+
+            <div class="timeline-body">
+              <p class="experience-desc">
+                "Completed a one-month Full Stack Development internship with hands-on exposure to programming, web development, backend development and practical project work."
+              </p>
+
+              <div class="skills-gained-box">
+                <span class="gained-label"><i class="fa-solid fa-check-double"></i> Skills Gained:</span>
+                <div class="gained-tags">
+                  <span class="gained-tag">Full Stack Development</span>
+                  <span class="gained-tag">Python</span>
+                  <span class="gained-tag">Programming</span>
+                  <span class="gained-tag">Web Development</span>
+                  <span class="gained-tag">Backend Development</span>
+                  <span class="gained-tag">APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">ACADEMIC BACKGROUND</span>
+          <h2 class="section-title">Higher <span class="gradient-text">Education</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="education-grid">
+          <div class="glass-card edu-card">
+            <div class="edu-icon-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-details">
+              <span class="degree-type">BACHELOR OF TECHNOLOGY</span>
+              <h3 class="degree-title">B.Tech AI & Data Science</h3>
+              
+              <div class="editable-field-group">
+                <div class="edu-field">
+                  <i class="fa-solid fa-university"></i>
+                  <span class="field-label">College:VSB COLLEGE OF ENGINEERING AND TECHNICAL CAMPUS COIMBATORE
+                  </span>
+                  <span class="field-value editable-value" title="Click to view editable detail"><VSB COLLEGE OF ENGINEERING AND TECHNICAL CAMPLUS COIMBATORE ></span>
+                </div>
+                <div class="edu-fiel
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <span class="field-label">Year:</span>
+                  <span class="field-value editable-value" title="Click to view editable detail">[2025-2029]</span>
+                </div>
+              </div>
+
+              <p class="edu-desc">
+                Specializing in artificial intelligence architecture, machine learning models, statistical data analysis, neural networks, and modern full-stack web engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">FEATURED WORK</span>
+          <h2 class="section-title">5 Key <span class="gradient-text">Project Showcases</span></h2>
+          <p class="section-subtitle">Practical applications combining AI, Data Science, Digital Twins, and Full Stack Web Technology.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 01 -->
+          <article class="glass-card project-card" id="project-1">
+            <div class="project-card-inner">
+              <div class="project-visual-col">
+                <div class="project-image-frame">
+                  <!-- Custom SVG UI Illustration for Healthcare / Nutrition Schedule -->
+                  <div class="project-svg-graphic graphic-1">
+                    <svg viewBox="0 0 600 380" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="600" height="380" rx="16" fill="#181329"/>
+                      <!-- UI Header -->
+                      <rect x="20" y="20" width="560" height="44" rx="8" fill="rgba(167, 139, 250, 0.12)" stroke="rgba(196, 181, 253, 0.2)" stroke-width="1"/>
+                      <circle cx="45" cy="42" r="6" fill="#F9A8D4"/>
+                      <circle cx="65" cy="42" r="6" fill="#C4B5FD"/>
+                      <circle cx="85" cy="42" r="6" fill="#A78BFA"/>
+                      <text x="115" y="46" fill="#E9D5FF" font-family="sans-serif" font-size="14" font-weight="600">Patient Nutrition Schedule • Dashboard v1.0</text>
+                      
+                      <!-- Patient Info Box -->
+                      <rect x="20" y="80" width="220" height="275" rx="12" fill="rgba(30, 24, 52, 0.8)" stroke="rgba(167, 139, 250, 0.3)" stroke-width="1"/>
+                      <circle cx="130" cy="135" r="32" fill="url(#grad-p1-avatar)"/>
+                      <text x="130" y="141" fill="#FFFFFF" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle">PN</text>
+                      <text x="130" y="190" fill="#F8F7FF" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Patient ID: #84920</text>
+                      <text x="130" y="210" fill="#C4B5FD" font-family="sans-serif" font-size="12" text-anchor="middle">Dietary Plan: Clinical AI Recovery</text>
+                      
+                      <rect x="35" y="235" width="190" height="32" rx="6" fill="rgba(249, 168, 212, 0.15)"/>
+                      <text x="50" y="255" fill="#F9A8D4" font-family="sans-serif" font-size="12" font-weight="bold">Caloric Goal: 2,100 kcal</text>
+                      
+                      <rect x="35" y="280" width="190" height="32" rx="6" fill="rgba(167, 139, 250, 0.15)"/>
+                      <text x="50" y="300" fill="#C4B5FD" font-family="sans-serif" font-size="12" font-weight="bold">Hydration: 3.2 L / Day</text>
+
+                      <!-- Schedule Grid & Chart -->
+                      <rect x="255" y="80" width="325" height="150" rx="12" fill="rgba(30, 24, 52, 0.8)" stroke="rgba(167, 139, 250, 0.3)" stroke-width="1"/>
+                      <text x="275" y="110" fill="#F9A8D4" font-family="sans-serif" font-size="14" font-weight="bold">Daily Meal & Medication Matrix</text>
+                      
+                      <rect x="275" y="125" width="285" height="28" rx="6" fill="rgba(196, 181, 253, 0.1)"/>
+                      <text x="285" y="143" fill="#E9D5FF" font-family="sans-serif" font-size="12">08:00 AM • High-Protein Nutrient Intake</text>
+                      
+                      <rect x="275" y="160" width="285" height="28" rx="6" fill="rgba(196, 181, 253, 0.1)"/>
+                      <text x="285" y="178" fill="#E9D5FF" font-family="sans-serif" font-size="12">01:30 PM • Low-Sodium Balanced Meal</text>
+                      
+                      <rect x="275" y="195" width="285" height="28" rx="6" fill="rgba(196, 181, 253, 0.1)"/>
+                      <text x="285" y="213" fill="#E9D5FF" font-family="sans-serif" font-size="12">07:00 PM • Micronutrient Digest Solution</text>
+
+                      <!-- Bottom Graph Box -->
+                      <rect x="255" y="242" width="325" height="113" rx="12" fill="rgba(30, 24, 52, 0.8)" stroke="rgba(249, 168, 212, 0.3)" stroke-width="1"/>
+                      <path d="M 275 320 Q 340 270 410 295 T 550 260" fill="none" stroke="#F9A8D4" stroke-width="3"/>
+                      <path d="M 275 320 Q 340 270 410 295 T 550 260 L 550 335 L 275 335 Z" fill="url(#grad-p1-area)" opacity="0.4"/>
+                      <circle cx="410" cy="295" r="5" fill="#A78BFA"/>
+                      <circle cx="550" cy="260" r="5" fill="#F9A8D4"/>
+
+                      <defs>
+                        <linearGradient id="grad-p1-avatar" x1="0" y1="0" x2="1" y2="1">
+                          <stop offset="0%" stop-color="#A78BFA"/>
+                          <stop offset="100%" stop-color="#F9A8D4"/>
+                        </linearGradient>
+                        <linearGradient id="grad-p1-area" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#F9A8D4"/>
+                          <stop offset="100%" stop-color="transparent"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="project-overlay-glow"></div>
+                </div>
+              </div>
+
+              <div class="project-info-col">
+                <div class="project-meta">
+                  <span class="project-num">01</span>
+                  <span class="project-category">HEALTHCARE / APPLICATION</span>
+                </div>
+
+                <h3 class="project-title">PATIENT NUTRITION SCHEDULE</h3>
+
+                <p class="project-desc">
+                  "A Patient Nutrition Schedule application designed to organize and manage personalized nutrition schedules for patients. The project focuses on structuring patient information and nutrition plans in an easy-to-use digital format."
+                </p>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Data Management</span>
+                  <span class="tech-tag">Healthcare Application</span>
+                  <span class="tech-tag">Database</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://github.com/yourusername/patient-nutrition-schedule" target="_blank" class="btn btn-project-repo">
+                    <span>VIEW REPOSITORY</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="glass-card project-card" id="project-2">
+            <div class="project-card-inner">
+              <div class="project-visual-col">
+                <div class="project-image-frame">
+                  <!-- Custom SVG UI Illustration for Task Manager -->
+                  <div class="project-svg-graphic graphic-2">
+                    <svg viewBox="0 0 600 380" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="600" height="380" rx="16" fill="#140E24"/>
+                      <!-- App Header Bar -->
+                      <rect x="20" y="20" width="560" height="44" rx="8" fill="rgba(196, 181, 253, 0.1)" stroke="rgba(167, 139, 250, 0.2)" stroke-width="1"/>
+                      <text x="40" y="46" fill="#F8F7FF" font-family="sans-serif" font-size="15" font-weight="bold">TaskFlow Workspace</text>
+                      <rect x="440" y="30" width="120" height="24" rx="12" fill="rgba(249, 168, 212, 0.2)"/>
+                      <text x="500" y="46" fill="#F9A8D4" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">+ New Task</text>
+                      
+                      <!-- Kanban Column 1: To Do -->
+                      <rect x="20" y="80" width="173" height="275" rx="10" fill="rgba(26, 20, 44, 0.8)"/>
+                      <text x="35" y="105" fill="#C4B5FD" font-family="sans-serif" font-size="13" font-weight="bold">TO DO (3)</text>
+                      
+                      <rect x="30" y="120" width="153" height="65" rx="6" fill="rgba(42, 33, 71, 0.9)" stroke="rgba(167, 139, 250, 0.3)"/>
+                      <text x="40" y="142" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">Setup Prisma Schema</text>
+                      <rect x="40" y="155" width="60" height="16" rx="4" fill="rgba(249, 168, 212, 0.2)"/>
+                      <text x="70" y="167" fill="#F9A8D4" font-family="sans-serif" font-size="9" text-anchor="middle">Backend</text>
+
+                      <rect x="30" y="195" width="153" height="65" rx="6" fill="rgba(42, 33, 71, 0.9)" stroke="rgba(167, 139, 250, 0.3)"/>
+                      <text x="40" y="217" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">JWT Auth Controller</text>
+                      <rect x="40" y="230" width="60" height="16" rx="4" fill="rgba(196, 181, 253, 0.2)"/>
+                      <text x="70" y="242" fill="#C4B5FD" font-family="sans-serif" font-size="9" text-anchor="middle">API</text>
+
+                      <!-- Kanban Column 2: In Progress -->
+                      <rect x="213" y="80" width="173" height="275" rx="10" fill="rgba(26, 20, 44, 0.8)"/>
+                      <text x="228" y="105" fill="#F9A8D4" font-family="sans-serif" font-size="13" font-weight="bold">IN PROGRESS (2)</text>
+                      
+                      <rect x="223" y="120" width="153" height="85" rx="6" fill="rgba(42, 33, 71, 0.9)" stroke="rgba(249, 168, 212, 0.4)"/>
+                      <text x="233" y="142" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">PostgreSQL Sync</text>
+                      <text x="233" y="160" fill="#C4B5FD" font-family="sans-serif" font-size="10">Endpoints tested via Postman</text>
+                      <rect x="233" y="172" width="133" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+                      <rect x="233" y="172" width="95" height="6" rx="3" fill="#F9A8D4"/>
+
+                      <!-- Kanban Column 3: Completed -->
+                      <rect x="406" y="80" width="173" height="275" rx="10" fill="rgba(26, 20, 44, 0.8)"/>
+                      <text x="421" y="105" fill="#A78BFA" font-family="sans-serif" font-size="13" font-weight="bold">COMPLETED (5)</text>
+                      
+                      <rect x="416" y="120" width="153" height="65" rx="6" fill="rgba(34, 45, 68, 0.8)" stroke="rgba(167, 139, 250, 0.4)"/>
+                      <text x="426" y="142" fill="#E9D5FF" font-family="sans-serif" font-size="12" font-weight="bold">✓ Responsive UI Design</text>
+                      <text x="426" y="162" fill="#A78BFA" font-family="sans-serif" font-size="10">Node + Express APIs</text>
+                    </svg>
+                  </div>
+                  <div class="project-overlay-glow"></div>
+                </div>
+              </div>
+
+              <div class="project-info-col">
+                <div class="project-meta">
+                  <span class="project-num">02</span>
+                  <span class="project-category">FULL STACK / PRODUCTIVITY</span>
+                </div>
+
+                <h3 class="project-title">TASK MANAGER</h3>
+
+                <p class="project-desc">
+                  "A full-stack Task Manager application designed to help users create, manage, update and delete tasks through a simple and responsive interface. The application includes user authentication, task management, backend API integration and database functionality."
+                </p>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">Prisma</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Postman</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://github.com/yourusername/task-manager" target="_blank" class="btn btn-project-repo">
+                    <span>VIEW REPOSITORY</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 -->
+          <article class="glass-card project-card" id="project-3">
+            <div class="project-card-inner">
+              <div class="project-visual-col">
+                <div class="project-image-frame">
+                  <!-- Custom SVG UI Illustration for Bank Online Application -->
+                  <div class="project-svg-graphic graphic-3">
+                    <svg viewBox="0 0 600 380" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="600" height="380" rx="16" fill="#120D1F"/>
+                      <!-- Bank Top Bar -->
+                      <rect x="20" y="20" width="560" height="44" rx="8" fill="rgba(167, 139, 250, 0.15)"/>
+                      <circle cx="45" cy="42" r="10" fill="#F9A8D4"/>
+                      <text x="65" y="47" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Digital Banking Suite</text>
+                      
+                      <!-- Virtual Credit Card Visual -->
+                      <rect x="30" y="85" width="260" height="150" rx="14" fill="url(#grad-p3-card)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                      <text x="50" y="115" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Secure Online Bank</text>
+                      <rect x="50" y="130" width="30" height="22" rx="4" fill="#F8F7FF" opacity="0.8"/>
+                      <text x="50" y="185" fill="#FFFFFF" font-family="monospace" font-size="14" letter-spacing="2">•••• •••• •••• 9421</text>
+                      <text x="50" y="215" fill="#E9D5FF" font-family="sans-serif" font-size="10">BALANCE: $18,450.00</text>
+
+                      <!-- Balance & Analytics Box -->
+                      <rect x="310" y="85" width="260" height="150" rx="12" fill="rgba(30, 24, 52, 0.8)" stroke="rgba(196, 181, 253, 0.3)"/>
+                      <text x="330" y="115" fill="#C4B5FD" font-family="sans-serif" font-size="13" font-weight="bold">Monthly Transaction Trend</text>
+                      <path d="M 330 200 Q 380 140 440 170 T 540 130" fill="none" stroke="#A78BFA" stroke-width="3"/>
+                      <circle cx="540" cy="130" r="5" fill="#F9A8D4"/>
+
+                      <!-- Recent Transactions List -->
+                      <rect x="30" y="250" width="540" height="105" rx="10" fill="rgba(24, 19, 41, 0.9)" stroke="rgba(167, 139, 250, 0.2)"/>
+                      <text x="50" y="275" fill="#F9A8D4" font-family="sans-serif" font-size="12" font-weight="bold">Recent Digital Activity</text>
+                      
+                      <rect x="50" y="288" width="500" height="24" rx="4" fill="rgba(196, 181, 253, 0.08)"/>
+                      <text x="60" y="304" fill="#E9D5FF" font-family="sans-serif" font-size="11">Transfer to Account #4091 • Completed</text>
+                      <text x="480" y="304" fill="#F9A8D4" font-family="sans-serif" font-size="11" font-weight="bold">-$240.00</text>
+
+                      <rect x="50" y="320" width="500" height="24" rx="4" fill="rgba(196, 181, 253, 0.08)"/>
+                      <text x="60" y="336" fill="#E9D5FF" font-family="sans-serif" font-size="11">Online Salary Credit Deposit • Approved</text>
+                      <text x="480" y="336" fill="#A78BFA" font-family="sans-serif" font-size="11" font-weight="bold">+$3,500.00</text>
+
+                      <defs>
+                        <linearGradient id="grad-p3-card" x1="0" y1="0" x2="1" y2="1">
+                          <stop offset="0%" stop-color="#7C3AED"/>
+                          <stop offset="50%" stop-color="#A78BFA"/>
+                          <stop offset="100%" stop-color="#F9A8D4"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="project-overlay-glow"></div>
+                </div>
+              </div>
+
+              <div class="project-info-col">
+                <div class="project-meta">
+                  <span class="project-num">03</span>
+                  <span class="project-category">BANKING / FULL STACK</span>
+                </div>
+
+                <h3 class="project-title">BANK ONLINE APPLICATION</h3>
+
+                <p class="project-desc">
+                  "A web-based banking application designed to provide a simple and user-friendly digital banking experience with organized user interactions and application functionality."
+                </p>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Database</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://github.com/yourusername/bank-online-application" target="_blank" class="btn btn-project-repo">
+                    <span>VIEW REPOSITORY</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04 -->
+          <article class="glass-card project-card" id="project-4">
+            <div class="project-card-inner">
+              <div class="project-visual-col">
+                <div class="project-image-frame">
+                  <!-- Custom SVG UI Illustration for Digital Traffic Twin -->
+                  <div class="project-svg-graphic graphic-4">
+                    <svg viewBox="0 0 600 380" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="600" height="380" rx="16" fill="#0F0A1A"/>
+                      <!-- Map Grid / Traffic Simulation background -->
+                      <g opacity="0.3">
+                        <line x1="100" y1="0" x2="100" y2="380" stroke="#A78BFA" stroke-width="1" stroke-dasharray="4"/>
+                        <line x1="250" y1="0" x2="250" y2="380" stroke="#A78BFA" stroke-width="1" stroke-dasharray="4"/>
+                        <line x1="420" y1="0" x2="420" y2="380" stroke="#A78BFA" stroke-width="1" stroke-dasharray="4"/>
+                        <line x1="0" y1="120" x2="600" y2="120" stroke="#A78BFA" stroke-width="1" stroke-dasharray="4"/>
+                        <line x1="0" y1="260" x2="600" y2="260" stroke="#A78BFA" stroke-width="1" stroke-dasharray="4"/>
+                      </g>
+
+                      <!-- Road Lines -->
+                      <path d="M 50 300 Q 250 150 550 100" fill="none" stroke="rgba(196, 181, 253, 0.4)" stroke-width="24"/>
+                      <path d="M 50 300 Q 250 150 550 100" fill="none" stroke="#F9A8D4" stroke-width="4" stroke-dasharray="12,8"/>
+
+                      <path d="M 120 50 Q 250 220 480 340" fill="none" stroke="rgba(167, 139, 250, 0.4)" stroke-width="24"/>
+                      <path d="M 120 50 Q 250 220 480 340" fill="none" stroke="#C4B5FD" stroke-width="4" stroke-dasharray="12,8"/>
+
+                      <!-- AI Nodes / Heatmaps -->
+                      <circle cx="235" cy="180" r="45" fill="rgba(249, 168, 212, 0.25)"/>
+                      <circle cx="235" cy="180" r="10" fill="#F9A8D4"/>
+                      <circle cx="235" cy="180" r="18" fill="none" stroke="#F9A8D4" stroke-width="2"/>
+
+                      <circle cx="430" cy="120" r="35" fill="rgba(167, 139, 250, 0.25)"/>
+                      <circle cx="430" cy="120" r="8" fill="#A78BFA"/>
+
+                      <circle cx="150" cy="240" r="30" fill="rgba(196, 181, 253, 0.25)"/>
+                      <circle cx="150" cy="240" r="8" fill="#C4B5FD"/>
+
+                      <!-- Floating Digital Twin Analytics HUD Overlay -->
+                      <rect x="30" y="30" width="220" height="90" rx="8" fill="rgba(24, 19, 41, 0.85)" stroke="rgba(167, 139, 250, 0.5)"/>
+                      <text x="45" y="55" fill="#F9A8D4" font-family="sans-serif" font-size="12" font-weight="bold">TRAFFIC TWIN SIMULATION</text>
+                      <text x="45" y="75" fill="#F8F7FF" font-family="sans-serif" font-size="11">Density Index: 84% (Congestion)</text>
+                      <text x="45" y="95" fill="#C4B5FD" font-family="sans-serif" font-size="10">AI Re-routing Active • 120 fps</text>
+
+                      <rect x="360" y="250" width="210" height="100" rx="8" fill="rgba(24, 19, 41, 0.85)" stroke="rgba(249, 168, 212, 0.5)"/>
+                      <text x="375" y="275" fill="#C4B5FD" font-family="sans-serif" font-size="12" font-weight="bold">Flow Analysis</text>
+                      <rect x="375" y="290" width="180" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+                      <rect x="375" y="290" width="140" height="8" rx="4" fill="#A78BFA"/>
+                      <text x="375" y="325" fill="#E9D5FF" font-family="sans-serif" font-size="10">Smart Signals Synchronized</text>
+                    </svg>
+                  </div>
+                  <div class="project-overlay-glow"></div>
+                </div>
+              </div>
+
+              <div class="project-info-col">
+                <div class="project-meta">
+                  <span class="project-num">04</span>
+                  <span class="project-category">AI / SMART MOBILITY</span>
+                </div>
+
+                <h3 class="project-title">DIGITAL TRAFFIC TWIN</h3>
+
+                <p class="project-desc">
+                  "An intelligent Digital Traffic Twin project designed to digitally represent and analyse traffic environments. The project focuses on traffic monitoring, simulation, traffic-flow analysis and data-driven insights to understand traffic patterns."
+                </p>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Artificial Intelligence</span>
+                  <span class="tech-tag">Data Analytics</span>
+                  <span class="tech-tag">Traffic Simulation</span>
+                  <span class="tech-tag">Data Visualization</span>
+                  <span class="tech-tag">Digital Twin</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://github.com/yourusername/digital-traffic-twin" target="_blank" class="btn btn-project-repo">
+                    <span>VIEW REPOSITORY</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05 -->
+          <article class="glass-card project-card" id="project-5">
+            <div class="project-card-inner">
+              <div class="project-visual-col">
+                <div class="project-image-frame">
+                  <!-- Custom SVG UI Illustration for BankRisk AI -->
+                  <div class="project-svg-graphic graphic-5">
+                    <svg viewBox="0 0 600 380" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="600" height="380" rx="16" fill="#160F26"/>
+                      <!-- Risk Assessment Header -->
+                      <rect x="20" y="20" width="560" height="44" rx="8" fill="rgba(249, 168, 212, 0.12)" stroke="rgba(249, 168, 212, 0.3)" stroke-width="1"/>
+                      <text x="40" y="46" fill="#F9A8D4" font-family="sans-serif" font-size="15" font-weight="bold">BankRisk AI Analytics Engine</text>
+                      
+                      <!-- Risk Gauge Visual -->
+                      <rect x="20" y="80" width="260" height="275" rx="12" fill="rgba(28, 22, 48, 0.85)" stroke="rgba(167, 139, 250, 0.3)"/>
+                      <text x="40" y="110" fill="#E9D5FF" font-family="sans-serif" font-size="13" font-weight="bold">AI Risk Assessment Index</text>
+
+                      <!-- Semi Circle Arc Gauge -->
+                      <path d="M 60 210 A 90 90 0 0 1 240 210" fill="none" stroke="rgba(196, 181, 253, 0.2)" stroke-width="18"/>
+                      <path d="M 60 210 A 90 90 0 0 1 195 135" fill="none" stroke="url(#grad-p5-gauge)" stroke-width="18" stroke-linecap="round"/>
+                      <text x="150" y="195" fill="#FFFFFF" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">Low Risk</text>
+                      <text x="150" y="220" fill="#C4B5FD" font-family="sans-serif" font-size="12" text-anchor="middle">Score: 18.4 / 100</text>
+
+                      <rect x="40" y="270" width="220" height="60" rx="8" fill="rgba(167, 139, 250, 0.1)"/>
+                      <text x="50" y="295" fill="#F8F7FF" font-family="sans-serif" font-size="11" font-weight="bold">ML Model Confidence: 96.8%</text>
+                      <text x="50" y="315" fill="#F9A8D4" font-family="sans-serif" font-size="10">Random Forest Classifier</text>
+
+                      <!-- Right Column: ML Feature Heatmap -->
+                      <rect x="295" y="80" width="285" height="275" rx="12" fill="rgba(28, 22, 48, 0.85)" stroke="rgba(167, 139, 250, 0.3)"/>
+                      <text x="315" y="110" fill="#C4B5FD" font-family="sans-serif" font-size="13" font-weight="bold">Feature Impact Heatmap</text>
+
+                      <rect x="315" y="130" width="245" height="36" rx="6" fill="rgba(249, 168, 212, 0.15)"/>
+                      <text x="325" y="152" fill="#E9D5FF" font-family="sans-serif" font-size="11">Default History Factor</text>
+                      <rect x="485" y="142" width="65" height="12" rx="6" fill="#F9A8D4"/>
+
+                      <rect x="315" y="176" width="245" height="36" rx="6" fill="rgba(196, 181, 253, 0.15)"/>
+                      <text x="325" y="198" fill="#E9D5FF" font-family="sans-serif" font-size="11">Debt-to-Income Ratio</text>
+                      <rect x="485" y="188" width="50" height="12" rx="6" fill="#C4B5FD"/>
+
+                      <rect x="315" y="222" width="245" height="36" rx="6" fill="rgba(167, 139, 250, 0.15)"/>
+                      <text x="325" y="244" fill="#E9D5FF" font-family="sans-serif" font-size="11">Credit Utilization Rate</text>
+                      <rect x="485" y="234" width="40" height="12" rx="6" fill="#A78BFA"/>
+
+                      <rect x="315" y="268" width="245" height="36" rx="6" fill="rgba(196, 181, 253, 0.15)"/>
+                      <text x="325" y="290" fill="#E9D5FF" font-family="sans-serif" font-size="11">Account Longevity</text>
+                      <rect x="485" y="280" width="25" height="12" rx="6" fill="#E9D5FF"/>
+
+                      <defs>
+                        <linearGradient id="grad-p5-gauge" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stop-color="#C4B5FD"/>
+                          <stop offset="100%" stop-color="#F9A8D4"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="project-overlay-glow"></div>
+                </div>
+              </div>
+
+              <div class="project-info-col">
+                <div class="project-meta">
+                  <span class="project-num">05</span>
+                  <span class="project-category">AI / FINTECH</span>
+                </div>
+
+                <h3 class="project-title">BANKRISK AI</h3>
+
+                <p class="project-desc">
+                  "An AI-based banking risk analysis project focused on analysing financial data, identifying potential risk patterns and generating data-driven insights for banking risk assessment."
+                </p>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">Artificial Intelligence</span>
+                  <span class="tech-tag">Data Analytics</span>
+                  <span class="tech-tag">Risk Analysis</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://github.com/yourusername/bankrisk-ai" target="_blank" class="btn btn-project-repo">
+                    <span>VIEW REPOSITORY</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">ACHIEVEMENTS</span>
+          <h2 class="section-title">Industry <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">Verified professional credentials from globally recognized institutions.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="glass-card cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-box">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="cert-body">
+                <span class="cert-issuer-tag">ORGANIZATION</span>
+                <h3 class="cert-title">DELOITTE</h3>
+                <p class="cert-desc">Professional Virtual Experience & Data Analytics Program Certification.</p>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-link">
+                  <span>View Credential</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glass-card cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-box">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="cert-body">
+                <span class="cert-issuer-tag">ORGANIZATION</span>
+                <h3 class="cert-title">UDEMY</h3>
+                <p class="cert-desc">Specialized Coursework in Data Science, Machine Learning & Full Stack Web Development.</p>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-link">
+                  <span>View Credential</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-card cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="cert-body">
+                <span class="cert-issuer-tag">ORGANIZATION</span>
+                <h3 class="cert-title">ANALYTICS VIDHYA</h3>
+                <p class="cert-desc">Data Science & Artificial Intelligence Practical Certification Assessment.</p>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-link">
+                  <span>View Credential</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="glass-card cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="cert-body">
+                <span class="cert-issuer-tag">ORGANIZATION</span>
+                <h3 class="cert-title">INFOSYS SPRINGBOARD</h3>
+                <p class="cert-desc">Technology Learning Path Certification in Emerging Technologies & Software Engineering.</p>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-link">
+                  <span>View Credential</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-label">GET IN TOUCH</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect.</span></h2>
+          <p class="section-subtitle max-w-700">
+            "I'm open to internship opportunities, learning opportunities, collaborations and conversations around AI, Data Science, Full Stack Development and technology."
+          </p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-cards-grid">
+          <!-- EMAIL CARD -->
+          <a href="mailto:24abiramirajkumar@gmail.com" class="glass-card contact-card" id="contact-email">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">EMAIL ME</span>
+              <span class="contact-val">24abiramirajkumar@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-chevron-right contact-arrow"></i>
+          </a>
+
+          <!-- LINKEDIN CARD -->
+          <div class="glass-card contact-card" id="contact-linkedin">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">LINKEDIN</span>
+              <span class="contact-val">Abirami R</span>
+            </div>
+          </div>
+
+          <!-- GITHUB CARD -->
+          <a href="https://github.com/24abiramirajkumar2023" target="_blank" class="glass-card contact-card" id="contact-github">
+            <div class="contact-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">GITHUB</span>
+              <span class="contact-val">24abiramirajkumar2023</span>
+            </div>
+            <i class="fa-solid fa-chevron-right contact-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE SECTION (BEFORE FOOTER) -->
+    <section class="signature-section" aria-label="Personal Signature">
+      <div class="signature-glow-overlay"></div>
+      <div class="signature-container">
+        <div class="handwritten-signature">Abirami</div>
+        <div class="printed-name">ABIRAMI</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">ABIRAMI</a>
+        <p class="footer-tagline">AI & DATA SCIENCE STUDENT</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/24abiramirajkumar2023" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:24abiramirajkumar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Abirami. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
